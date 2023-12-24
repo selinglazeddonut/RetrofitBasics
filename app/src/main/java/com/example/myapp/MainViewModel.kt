@@ -29,7 +29,7 @@ class MainViewModel:ViewModel()  {
             delay(2000)
             try {
                 val response = RetrofitInstance.api.fetchPost()
-                if (response.isSuccess) {
+                if (response.isSuccessful) {
                     response.body()?.let { post ->
                         _post.value = post
                     }

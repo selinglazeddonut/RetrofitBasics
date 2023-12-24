@@ -1,7 +1,7 @@
 package com.example.myapp
 
-import retrofit2.GsonConverterFactory
 import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitInstance  {
     //bir app ayağa kalktıgında retrofit üzerinden api servisleri oluşturulur
